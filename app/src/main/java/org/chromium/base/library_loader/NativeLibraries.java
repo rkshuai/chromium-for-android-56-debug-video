@@ -1,0 +1,12 @@
+package org.chromium.base.library_loader;
+import org.chromium.base.annotations.SuppressFBWarnings;
+@SuppressFBWarnings
+public class NativeLibraries {
+    public static boolean sUseLinker = false;
+    public static boolean sUseLibraryInZipFile = false;
+    public static boolean sEnableLinkerTests = false;
+    public static final String[] LIBRARIES =
+            {"mojo_public_system.cr","c++_shared","base.cr","ffmpeg.cr","device_event_log.cr","gles2_c_lib.cr","display_types.cr","sandbox_services.cr","platform.cr","prefs.cr","mojo_public_system_cpp.cr","startup_tracing.cr","v8_libbase.cr","range.cr","gles2_utils.cr","geometry.cr","events_base.cr","protobuf_lite.cr","user_prefs.cr","seccomp_bpf.cr","common.cr","icuuc.cr","device_base.cr","mojo_common_lib.cr","keyed_service_core.cr","bindings.cr","boringssl.cr","url.cr","device_gamepad.cr","url_ipc.cr","crcrypto.cr","discardable_memory_common.cr","policy_proto.cr","ui_data_pack.cr","cpp.cr","icui18n.cr","discardable_memory_client.cr","cc_proto.cr","chromium_sqlite3.cr","cloud_policy_proto_generated_compile.cr","v8.cr","device_vibration.cr","discardable_memory_service.cr","wtf.cr","onc.cr","display_util.cr","ipc.cr","sql.cr","shared_memory_support.cr","power_monitor.cr","time_zone_monitor.cr","url_matcher.cr","skia.cr","generic_sensor.cr","mojo_system_impl.cr","gin.cr","webdata_common.cr","gfx_ipc_geometry.cr","keyed_service_content.cr","base_i18n.cr","blink_common.cr","tracing.cr","gfx_ipc_color.cr","events_ipc.cr","net.cr","surface.cr","gfx_ipc_skia.cr","js.cr","gfx.cr","accessibility.cr","midi.cr","gfx_ipc.cr","ui_touch_selection.cr","geolocation.cr","message_center.cr","proxy_config.cr","devices.cr","gl_wrapper.cr","display.cr","device_vr.cr","net_with_v8.cr","storage_common.cr","captive_portal.cr","user_manager.cr","printing.cr","gesture_detection.cr","gl_init.cr","storage_browser.cr","events.cr","ui_base.cr","bluetooth.cr","native_theme.cr","policy_component.cr","ui_base_ime.cr","gpu.cr","media.cr","media_mojo_services.cr","gles2_implementation.cr","media_gpu.cr","cc.cr","capture.cr","display_compositor.cr","blink_platform.cr","cc_ipc.cr","blink_core.cr","cc_surfaces.cr","snapshot.cr","blink_modules.cr","cc_blink.cr","ui_android.cr","shell_dialogs.cr","blink_web.cr","compositor.cr","media_blink.cr","power_save_blocker.cr","content.cr","domain_reliability.cr","web_dialogs.cr","sessions.cr","chrome.cr"};
+    static String sVersionNumber =
+            "56.0.2924.87";
+}
