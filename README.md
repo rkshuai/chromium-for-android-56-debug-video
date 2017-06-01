@@ -25,8 +25,8 @@ try {
 
 注意:
 
-&emsp;&emsp;一、本版本之所以称为debug版本是因为在args.gn中is_debug设置为true, 不过本版本可能容易崩溃。release版本见https://github.com/rkshuai/chromium-for-android-56-release-video 
-
+&emsp;&emsp;一、本版本之所以称为debug版本是因为在args.gn中is_debug设置为true, 不过本版本可能容易崩溃。release版本见
+https://github.com/JackyAndroid/AndroidChromium
 &emsp;&emsp;二、本版本在args.gn中对video编码进行了设置，因此可以播放视频。
 
 &emsp;&emsp;三、本版本和365 delion AndroidChromium在抽取上的差别是将en-US.pak和zh-CN.pak资源放到assets里面，因为BuildConfig.java这个生成文件和之前的chromium版本不同。新版本中增加了两个变量COMPRESSED_LOCALES和 UNCOMPRESSED_LOCALES，我们需要将COMPRESSED_LOCALES数组置空，而将UNCOMPRESSED_LOCALES数组置为”en-US”， ”zh-CN”（反之也行）。如果不这样进行设置运行apk时就会发生崩溃。
